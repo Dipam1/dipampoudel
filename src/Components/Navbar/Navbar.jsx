@@ -7,17 +7,19 @@ function Navbar() {
   const bur1 = useRef();
   const bur2 = useRef();
   const bur3 = useRef();
+  const logoRef = useRef();
   const burgerClicked = () => {
     navlinksCSS.current.classList.toggle("burger-clicked");
     bur1.current.classList.toggle("skew1");
     bur2.current.classList.toggle("skew2");
     bur3.current.classList.toggle("display-none");
+    logoRef.current.classList.toggle("logo-middle");
   };
 
   return (
     <div>
       <div className="navbar">
-        <div className="logo">
+        <div className="logo" ref={logoRef}>
           <img src={logo} alt="dipam-logo" />
         </div>
         <div className="navlinks" ref={navlinksCSS}>
@@ -44,6 +46,9 @@ function Navbar() {
           <div className="bur3" ref={bur3}></div>
         </div>
       </div>
+
+      <div className="big-body">
+        <h1>CHAAAAAK</h1></div>
     </div>
   );
 }
