@@ -19,14 +19,28 @@ function Navbar() {
   return (
     <div>
       <div className="navbar">
-        <div className="logo" ref={logoRef}>
-          <img src={logo} alt="dipam-logo" />
-        </div>
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="logo" ref={logoRef}>
+            <img src={logo} alt="dipam-logo" />
+          </div>
+        </a>
         <div className="navlinks" ref={navlinksCSS}>
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dipam-poudel/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/dipam-poudel/"
+          >
             LINKEDIN
           </a>
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/deepum__poudel">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/deepum__poudel"
+          >
             TWITTER
           </a>
           <a
@@ -48,7 +62,8 @@ function Navbar() {
       </div>
 
       <div className="big-body">
-        <h1>CHAAAAAK</h1></div>
+        <h1>CHAAAAAK</h1>
+      </div>
     </div>
   );
 }

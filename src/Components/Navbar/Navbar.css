@@ -7,11 +7,23 @@
 }
 
 .logo {
-  z-index: 100;
+  z-index: 100000000;
+}
+
+.logo :hover{
+  cursor: help;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+  /* transform: rotate(0.3rad);/ */
+  /* transform: rotate(3grad); */
+  /* transform: rotate(.03turn);  */
 }
 
 .logo img {
-  height: 65px;
+  height: 70px;
   width: auto;
   margin-top: 2px;
   margin-left: 3rem;
@@ -33,7 +45,7 @@
   width: 100%;
 }
 
-.navlinks a:hover{
+.navlinks a:hover {
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
 }
@@ -58,22 +70,22 @@
     margin-top: 5px;
     background-color: black;
   }
-  
+
   .navlinks {
     display: none;
   }
 
-  .navlinks a{
+  .navlinks a {
     font-size: 2rem;
   }
 
-  .navlinks a:hover{
+  .navlinks a:hover {
     transform: translateY(-1px);
-    color: rgb(0, 0, 0);    
+    color: rgb(0, 0, 0);
     font-size: 2rem;
   }
 
-  .burger-clicked {    
+  .burger-clicked {
     z-index: 1;
     margin: 0;
     text-align: center;
@@ -103,15 +115,33 @@
     transition: 0.5s;
     transform: rotate(45deg);
   }
+  .logo-middle {
+    transform: translate(0px, 10px);
+    transition: 2s;
+  }
 
-  .logo-middle{
-    transition: 0.5s;
-    transform: translate(300%);
+  .logo-middle img {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+  }
+
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
-
-.big-body{
+.big-body {
   font-size: 9rem;
   text-align: center;
 }
