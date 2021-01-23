@@ -1,9 +1,9 @@
-import './App.css';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-<h1>turi vunte</h1>
+    <div>
+      <Navbar/>
     </div>
   );
 }
