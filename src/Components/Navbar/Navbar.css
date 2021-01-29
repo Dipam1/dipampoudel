@@ -1,7 +1,7 @@
 .navbar {
   height: 70px;
-  background: rgb(20, 207, 14);
-  box-shadow: 2px 2px 2px rgb(104, 94, 94);
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   display: flex;
   justify-content: space-between;
 }
@@ -18,15 +18,40 @@
   z-index: 99;
 }
 
+.logo{
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  display: block;
+	top: 0;
+  
+  transition: all 0.2s ease-in-out;
+  animation: ani 0.4s infinite;
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 .navlinks {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   margin-right: 2rem;
+  position: static;
 }
 
 .navlinks a {
-  color: rgb(253, 253, 250);
+  color: rgb(6, 146, 113);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -36,7 +61,7 @@
 
 .navlinks a:hover {
   color: rgb(0, 0, 0);
-  font-size: 1.3rem;
+  font-size: 1.21rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -48,7 +73,7 @@
 
   .burger:hover {
     cursor: pointer;
-    transform: translateY(-0.8px);
+    transform: translateY(-0.1px);
   }
 
   .bur1,
@@ -65,23 +90,21 @@
   }
 
   .navlinks a {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .navlinks a:hover {
-    transform: translateY(-1px);
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
+    color: rgb(90, 23, 23);
   }
 
   .burger-clicked {
     margin: 0;
     text-align: center;
     position: absolute;
-    background: rgba(74, 173, 31, 0.993);
+    background: rgb(218, 204, 204);
     display: block;
     width: 100%;
-    z-index: 1!important;
+    z-index: 100!important;
     height: 100vh;
     display: flex;
     flex-direction: column;

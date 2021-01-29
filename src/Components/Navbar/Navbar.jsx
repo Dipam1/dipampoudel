@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./Navbar.css";
 import logo from "../../Images/logo.png";
 
-function Navbar() {
+const Navbar = () => {
   const navlinksCSS = useRef();
   const bur1 = useRef();
   const bur2 = useRef();
@@ -60,6 +60,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

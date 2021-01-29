@@ -1,11 +1,12 @@
 import Navbar from './Components/Navbar/Navbar';
+import FrontPageTopCard from './Components/FrontPageTopCard/FrontPageTopCard';
+
 
 function App() {
   return (
     <div>
       <Navbar/>
-      <h1>Proxy is a hoe</h1>
-      <h1>Anna is a hoe as well</h1>
+      <FrontPageTopCard/>
     </div>
   );
 }
