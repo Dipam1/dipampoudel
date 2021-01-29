@@ -1,32 +1,68 @@
 import React, { useRef } from "react";
 import "./Navbar.css";
-import LOGO from "../../Images/logo.png";
+import logo from "../../Images/logo.png";
 
 function Navbar() {
-  const burger = useRef();
+  const navlinksCSS = useRef();
+  const bur1 = useRef();
+  const bur2 = useRef();
+  const bur3 = useRef();
+  const logoRef = useRef();
   const burgerClicked = () => {
-      burger.current.classList.toggle("burger-clicked");
+    navlinksCSS.current.classList.toggle("burger-clicked");
+    bur1.current.classList.toggle("skew1");
+    bur2.current.classList.toggle("skew2");
+    bur3.current.classList.toggle("display-none");
+    logoRef.current.classList.toggle("logo-middle");
   };
 
-  const memeClicked=()=>{
-      alert("YOU A HOE")
-  }
-
   return (
-    <div className="navbar">
-      <div className="logo">
-        <img src={LOGO} alt="vlc" />
+    <div>
+      <div className="navbar">
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="logo" ref={logoRef}>
+            <img src={logo} alt="dipam-logo" />
+          </div>
+        </a>
+        <div className="navlinks" ref={navlinksCSS}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/dipam-poudel/"
+          >
+            LINKEDIN
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/deepum__poudel"
+          >
+            TWITTER
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/im.jack.skellington/"
+          >
+            INSTAGRAM
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://github.com/Dipam1">
+            GITHUB
+          </a>
+        </div>
+        <div className="burger" onClick={burgerClicked}>
+          <div className="bur1" ref={bur1}></div>
+          <div className="bur2" ref={bur2}></div>
+          <div className="bur3" ref={bur3}></div>
+        </div>
       </div>
-      <div ref={burger} className="nav-links">
-        <a href="/" onClick={memeClicked}>HOME</a>
-        <a href="twitter.com/deepum__poudel" onClick={memeClicked}>TWITTER</a>
-        <a href="instagram.com/im.jack.skellington" onClick={memeClicked}>INSTAGRAM</a>
-        <a href="github.com/dipam1" onClick={memeClicked}>GITHUB</a>
-      </div>
-      <div className="burger" onClick={burgerClicked}>
-        <div className="bur"></div>
-        <div className="bur"></div>
-        <div className="bur"></div>
+
+      <div className="big-body">
+        <h1>CHAAAAAK</h1>
       </div>
     </div>
   );

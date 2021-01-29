@@ -1,12 +1,19 @@
 .navbar {
+<<<<<<< HEAD
   min-height: 80px;
   background: rgba(99, 224, 126, 0.185);
   box-shadow: 2px 2px 2px rgba(50, 53, 50, 0.185);
+=======
+  height: 70px;
+  background: rgb(20, 207, 14);
+  box-shadow: 2px 2px 2px rgb(104, 94, 94);
+>>>>>>> 6d7f672349bd610db4e3535a0a96dad5568e8108
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
+<<<<<<< HEAD
   margin-top: 0.5rem;
   margin-left: 2rem;
   overflow: hidden;
@@ -59,4 +66,143 @@
 
 .nav-links a:hover {
   color: rgb(177, 12, 108);
+=======
+  z-index: 100000000;
+}
+
+.logo :hover{
+  cursor: help;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+  /* transform: rotate(0.3rad);/ */
+  /* transform: rotate(3grad); */
+  /* transform: rotate(.03turn);  */
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  margin-top: 2px;
+  margin-left: 3rem;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-right: 2rem;
+}
+
+.navlinks a {
+  color: rgb(253, 253, 250);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 3rem;
+  width: 100%;
+}
+
+.navlinks a:hover {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .burger {
+    z-index: 1000;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+    transform: translateY(-0.8px);
+  }
+
+  .bur1,
+  .bur2,
+  .bur3 {
+    width: 50px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: black;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .navlinks a {
+    font-size: 2rem;
+  }
+
+  .navlinks a:hover {
+    transform: translateY(-1px);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+  }
+
+  .burger-clicked {
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    background: rgb(78, 212, 16);
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-clicked a {
+    margin-top: 9rem;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .skew1 {
+    transition: 0.5s;
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .skew2 {
+    transition: 0.5s;
+    transform: rotate(45deg);
+  }
+  .logo-middle {
+    transform: translate(0px, 10px);
+    transition: 2s;
+  }
+
+  .logo-middle img {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+  }
+
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.big-body {
+  font-size: 9rem;
+  text-align: center;
+>>>>>>> 6d7f672349bd610db4e3535a0a96dad5568e8108
 }
