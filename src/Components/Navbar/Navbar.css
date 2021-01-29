@@ -1,0 +1,62 @@
+.navbar {
+  min-height: 80px;
+  background: rgba(99, 224, 126, 0.185);
+  box-shadow: 2px 2px 2px rgba(50, 53, 50, 0.185);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+.nav-links {
+  margin: auto 0;
+}
+
+@media screen and (max-width: 680px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    margin: 1.5rem 4rem;
+  }
+
+  .burger .bur {
+    width: 40px;
+    height: 4px;
+    margin-bottom: 3px;
+    background-color: black;
+  }
+
+  .burger-clicked {
+    display: flex;
+    flex-direction: column;
+    width: 900%;
+    height: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .burger-clicked a {
+    margin: 4rem auto;
+  }
+}
+
+.nav-links a {
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 3rem;
+  color: rgb(235, 117, 186);
+}
+
+.nav-links a:hover {
+  color: rgb(177, 12, 108);
+}
