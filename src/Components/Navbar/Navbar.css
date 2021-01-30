@@ -48,7 +48,7 @@
   margin-top: 20px;
   margin-right: 2rem;
   position: static;
-}
+ }
 
 .navlinks a {
   color: rgb(6, 146, 113);
@@ -69,11 +69,20 @@
     z-index: 1000;
     margin-top: 20px;
     margin-right: 50px;
+     /* to remove blue on touch */
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     -webkit-tap-highlight-color: transparent;
   }
 
   .burger:hover {
     cursor: pointer;
     transform: translateY(-0.1px);
+    background: rgba(206, 11, 11, 0);
   }
 
   .bur1,

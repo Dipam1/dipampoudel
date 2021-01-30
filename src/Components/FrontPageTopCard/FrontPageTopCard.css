@@ -82,14 +82,14 @@
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(82, 27, 27, 0.144); /* Black w/opacity/see-through */
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
   border: 2px solid #a1a1a1;
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -85%);
   z-index: 2;
-  width: 55%;
+  width: 60%;
   padding: 20px;
   text-align: center;
 }
