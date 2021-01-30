@@ -20,7 +20,8 @@ function FrontPageTopCard() {
       </div>
       <h2 className="meme">
         And thats all you need to know right now. <br />
-        Bye
+        Bye <br></br>
+        P.S. Proxy is a hoe
       </h2>
     </div>
   );
