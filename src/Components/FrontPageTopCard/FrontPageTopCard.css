@@ -36,8 +36,8 @@
   left: 0;
   display: block;
   top: 0;
-  transition: all 8s;
-  animation: mario-ani 8s infinite;
+  transition: all 30s;
+  animation: mario-ani 30s infinite;
 }
 
 .mario-running img {
