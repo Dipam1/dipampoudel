@@ -5,7 +5,7 @@
   display: flex;
   flex-flow: row wrap;
   margin-top: 2%;
-  width: 40%;
+  width: 70%;
 }
 .tictactoe-small-div {
   height: 100px;
