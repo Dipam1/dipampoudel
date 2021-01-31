@@ -1,0 +1,28 @@
+.tiktactoe-big-div {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10%;
+    width: 40%;
+  }
+  .tiktactoe-small-div {
+    height: 100px;
+    width: 30%;
+    background-color: lightblue;
+  }
+  
+  .tiktactoe-h1 {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .green {
+    background: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
