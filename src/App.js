@@ -7,10 +7,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <Navbar />
         <Switch>
-          <Navbar />
-          <Route path="/" exact component={FrontPageTopCard} />
-          <Route path="/tictactoe" exact component={TicTacToe} />
+          <Route exact path="/">
+            <FrontPageTopCard />
+          </Route>
+          <Route exact path="/tictactoe">
+            <TicTacToe />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

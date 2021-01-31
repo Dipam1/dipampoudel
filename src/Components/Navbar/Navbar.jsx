@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Navbar.css";
 import logo from "../../Images/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navlinksCSS = useRef();
@@ -17,15 +18,11 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar">
-        <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <NavLink to="/tictactoe">
           <div className="logo">
             <img src={logo} alt="dipam-logo" />
           </div>
-        </a>
+        </NavLink>
         <div className="navlinks" ref={navlinksCSS}>
           <a
             target="_blank"

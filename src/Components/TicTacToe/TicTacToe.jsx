@@ -24,15 +24,11 @@ function TicTacToe() {
       : (temp[index].theClassName = temp[index].theClassName + " red");
 
     setToggle(temp);
-    console.log(temp[index].theClassName);
     oneOrZero === "0" ? setOneOrZero("X") : setOneOrZero("0");
     checkIfOver();
   };
 
   const checkIfOver = () => {
-    console.log("values " + toggle[0].value);
-    console.log("values " + toggle[1].value);
-    console.log("values " + toggle[2].value);
     if (
       (toggle[0].value === toggle[1].value &&
         toggle[1].value === toggle[2].value &&
@@ -62,22 +58,45 @@ function TicTacToe() {
       console.log("OVER");
       winner();
     }
+
+    if (
+      toggle[0].value !== "" &&
+      toggle[1].value !== "" &&
+      toggle[2].value !== "" &&
+      toggle[3].value !== "" &&
+      toggle[4].value !== "" &&
+      toggle[5].value !== "" &&
+      toggle[6].value !== "" &&
+      toggle[7].value !== "" &&
+      toggle[8].value !== ""
+    ) {
+      draw();
+    }
+  };
+
+  const reset = () => {
+    const temp = [
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+      { value: "", disabled: false, theClassName: "tictactoe-small-div" },
+    ];
+    setToggle(temp);
   };
 
   const winner = () => {
     alert("THE WINNER IS " + oneOrZero);
-    const temp = [
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-      { value: "", disabled: false },
-    ];
-    setToggle(temp);
+    reset();
+  };
+
+  const draw = () => {
+    alert("Y'ALL BOTH SHIT");
+    reset();
   };
 
   return (

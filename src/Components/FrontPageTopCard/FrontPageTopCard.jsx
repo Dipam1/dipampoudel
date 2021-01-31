@@ -6,9 +6,15 @@ function FrontPageTopCard() {
   return (
     <div>
       <div className="mario-marquee-path">
-        <div className="mario-running">
-          <img src={mario} alt="mario" />
-        </div>
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="mario-running">
+            <img src={mario} alt="mario" />
+          </div>
+        </a>
       </div>
       <div className="front-page-top-card-body"></div>
       <div className="front-page-top-card-body-header">
@@ -21,7 +27,6 @@ function FrontPageTopCard() {
       <h2 className="meme">
         And thats all you need to know right now. <br />
         Bye <br></br>
-        P.S. Proxy is a hoe
       </h2>
     </div>
   );
