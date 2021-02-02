@@ -1,6 +1,7 @@
 import React from "react";
 import "./FrontPageTopCard.css";
 import mario from "../../Images/mario-run.gif";
+import {NavLink} from 'react-router-dom'
 
 function FrontPageTopCard() {
   return (
@@ -25,7 +26,8 @@ function FrontPageTopCard() {
         <h3>One of those.</h3>
       </div>
       <h2 className="meme">
-        And thats all you need to know right now. <br />
+        <NavLink to="/bounce-that-bitch">Play with balls</NavLink>
+        <br />
         Bye <br></br>
       </h2>
     </div>
