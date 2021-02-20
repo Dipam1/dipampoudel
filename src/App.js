@@ -1,5 +1,5 @@
 import Navbar from "./Components/Navbar/Navbar";
-import FrontPageTopCard from "./Components/FrontPageTopCard/FrontPageTopCard";
+import FrontPage from "./Components/FrontPage/FrontPage";
 import TicTacToe from "./Components/TicTacToe/TicTacToe";
 import BouncyBall from "./Pages/BouncyBall/BonucyBall";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/">
-            <FrontPageTopCard />
+            <FrontPage />
           </Route>
           <Route exact path="/tictactoe">
             <TicTacToe />
