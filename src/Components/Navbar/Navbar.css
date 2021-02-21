@@ -59,6 +59,7 @@
 }
 
 .burger {
+  right: 0;
   display: none;
   margin-top: 10px;
   margin-right: 10px;
@@ -78,6 +79,7 @@
     display: none;
   }
   .burger {
+    position: fixed;
     display: block;
   }
   .burger-clicked {
@@ -94,7 +96,7 @@
       no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
