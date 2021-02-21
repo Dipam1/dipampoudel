@@ -54,7 +54,7 @@
   transform: translate(0, -9px);
 }
 .navlink a:hover:after,
-.navlink a:hover:focus {
+.navlink a:focus:after {
   width: 100%;
   left: 0;
 }
