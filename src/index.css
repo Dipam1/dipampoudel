@@ -2,12 +2,13 @@ body {
   margin: 0;
   background: rgb(150, 191, 209);
   background: linear-gradient(
-    90deg,
-    rgba(150, 191, 209, 1) 0%,
-    rgba(206, 187, 213, 1) 35%,
-    rgba(194, 214, 201, 1) 64%,
-    rgba(180, 195, 214, 1) 100%
-  ) no-repeat;
+      90deg,
+      rgba(150, 191, 209, 1) 0%,
+      rgba(206, 187, 213, 1) 35%,
+      rgba(194, 214, 201, 1) 64%,
+      rgba(180, 195, 214, 1) 100%
+    )
+    no-repeat;
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: "Space Mono", monospace;
@@ -24,7 +25,11 @@ html {
   padding: 0;
 }
 
-.content{
+.content {
   width: 80%;
   margin: auto;
+}
+
+:focus {
+  outline: none;
 }
