@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 
-.logo :hover {
+.logo :hover, .logo :focus {
   animation: rotation 2s infinite linear;
   cursor: crosshair;
 }
