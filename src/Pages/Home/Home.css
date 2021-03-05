@@ -1,32 +1,8 @@
 .home {
-  width: 28vw;
-  height: 49vh;
-  display: block;
-  position: relative;
-  margin: 5rem auto;
-  padding: 4rem;
-}
-
-.home::after {
-  content: "";
-  background: url("../../Images/angry.png") no-repeat;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-.home:hover {
-  transform: scale(1.4);
-}
-
-.home:hover h1:after {
-  content: "FINNA GET SLAPPED";
-}
-
-.home h1 {
-  color: rgb(65, 187, 76);
-  text-shadow: 2px 2px rgb(71, 57, 57);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in;
 }
