@@ -21,7 +21,7 @@ const Home = () => {
         <h1>{textChange}</h1>
       </div>
       <h1 style={{ marginTop: "30vh" }}>
-        Unless you're ramesh, fuck you ramesh. i hate your ass.
+        Unless you're ramesh. everyone except ramesh, i like.
       </h1>
     </>
   );
