@@ -10,7 +10,7 @@ const Home = () => {
       } else if (textChange === "i like football") {
         settextChange("i also kinda like me");
       } else {
-        settextChange("but most importantly, i like NANCY (like as friend) we'll see:)");
+        settextChange("but most importantly, i like you :)");
       }
     }, 2000);
   }, [textChange]);
@@ -18,10 +18,10 @@ const Home = () => {
   return (
     <>
       <div className="home">
-        <h1>{textChange}</h1>
+        <h1 onClick={settextChange("imagine being named NANCY, ew")}>{textChange}</h1>
       </div>
       <h1 style={{ marginTop: "30vh" }}>
-        {/* Unless you're ramesh. everyone except ramesh, i like. */}
+        Unless you're dicky. everyone except dicky, i like.
       </h1>
     </>
   );
