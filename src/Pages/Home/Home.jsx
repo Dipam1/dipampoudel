@@ -18,12 +18,11 @@ const Home = () => {
   return (
     <>
       <div className="home">
-        <h1 onClick={() => settextChange("imagine being named NANCY, ew")}>
-          {textChange}
-        </h1>
+        <h1>{textChange}</h1>
       </div>
       <h1 style={{ marginTop: "30vh" }}>
-        Unless you're dicky. everyone except dicky, i like.
+        Unless you like breathing. If you like breathing thats hella gross ew.
+        🤢🤮
       </h1>
     </>
   );
