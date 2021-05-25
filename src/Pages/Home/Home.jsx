@@ -10,7 +10,9 @@ const Home = () => {
       } else if (textChange === "i like football") {
         settextChange("i also kinda like me");
       } else {
-        settextChange("but most importantly, i like you :)");
+        settextChange(
+          "but most importantly, i like you :), all except aaru bhakada as a fruit. too furry(hairy) like go shave it dumbass"
+        );
       }
     }, 2000);
   }, [textChange]);
@@ -20,10 +22,6 @@ const Home = () => {
       <div className="home">
         <h1>{textChange}</h1>
       </div>
-      <h1 style={{ marginTop: "30vh" }}>
-        Unless you like breathing. If you like breathing thats hella gross ew.
-        🤢🤮
-      </h1>
     </>
   );
 };
