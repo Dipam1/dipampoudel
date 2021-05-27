@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import "./Navbar.css";
+import { useHistory } from "react-router-dom";
 import logo from "../../Images/logo.png";
 
 function Navbar() {
+  const history = useHistory();
   const burgerRef = useRef();
   const bur1 = useRef();
   const bur2 = useRef();
@@ -16,7 +18,12 @@ function Navbar() {
   return (
     <div>
       <div className="navbar">
-        <a className="logo" href="/game" target="_blank" rel="noreferrer">
+        <a
+          className="logo"
+          target="_blank"
+          rel="noreferrer"
+          onClick={() => history.push("/game")}
+        >
           <img src={logo} alt="dipam" />
         </a>
         <div className="navlinks" ref={burgerRef}>
