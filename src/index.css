@@ -1,3 +1,7 @@
+* {
+  font-family: "Space Mono", monospace;
+}
+
 body {
   margin: 0;
   background: rgb(150, 191, 209);
@@ -11,7 +15,6 @@ body {
     no-repeat;
   background-attachment: fixed;
   overflow-x: hidden;
-  font-family: "Space Mono", monospace;
 }
 
 code {
@@ -32,4 +35,11 @@ html {
 
 :focus {
   outline: none;
+}
+
+:root {
+  --color-one: #bcf5db;
+  --color-two: #569f56;
+  --color-three: #fad2e7;
+  --color-four: #e6aacf;
 }

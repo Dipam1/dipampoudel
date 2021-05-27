@@ -1,8 +1,118 @@
 .home {
-  width: 100%;
-  height: 80vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 1s ease-in;
+  margin-top: 5rem;
+}
+
+.home .home-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.home .home-top .image-container .bg {
+  border-radius: 40%;
+  background: url("../../Images/RemoveBG-pixels.png") no-repeat center;
+  min-height: 85vh;
+  width: 500px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  filter: blur(2px);
+  transition: 1s;
+}
+
+.home .home-top .image-container .bg:hover {
+  background: url("../../Images/RemoveBG.png") no-repeat center;
+  transition: 1s;
+  filter: blur(0px);
+}
+
+.home .home-top .image-container img {
+  border-radius: 40%;
+  max-height: 80vh;
+  width: 70%;
+}
+
+.home .home-top .text button {
+  background-color: transparent;
+  border: 1px solid var(--color-two);
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-shadow: rgba(76, 52, 52, 0.537) 0px 0px 10px;
+}
+
+.home .home-top .text button:hover {
+  background: var(--color-two);
+}
+
+.home .wrapper {
+  margin-top: 1rem;
+}
+
+.home a {
+  display: block;
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid rgb(74, 71, 71);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.home a span {
+  position: relative;
+  z-index: 1;
+}
+
+.home a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--color-two);
+  transition: all 0.35s;
+}
+
+.home a:hover {
+  color: #fff;
+}
+
+.home a:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .home-top .image-container {
+    display: none;
+  }
+
+  .home-top .text .bg {
+    height: 60vh;
+    background: url("../../Images/RemoveBG-pixels.png") no-repeat;
+    filter: blur(2px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transition: 1s;
+  }
+
+  .home-top .text .bg:hover {
+    background: url("../../Images/RemoveBG.png") no-repeat;
+    filter: blur(2px);
+    transition: 1s;
+  }
 }
