@@ -16,12 +16,7 @@ function Navbar() {
   return (
     <div>
       <div className="navbar">
-        <a
-          className="logo"
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a className="logo" href="/game" target="_blank" rel="noreferrer">
           <img src={logo} alt="dipam" />
         </a>
         <div className="navlinks" ref={burgerRef}>

@@ -22,7 +22,11 @@ const GameMaybe = () => {
         class="slider"
         id="myRange"
         onChange={valueChanged}
+        style={{width:"800px"}}
       ></input>
+      <br />
+      <br />
+      <br />
       <br />
       <img src={meme} alt="" width={value * 10} height="400px" />
     </div>
