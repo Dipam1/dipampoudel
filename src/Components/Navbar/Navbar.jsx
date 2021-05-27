@@ -22,7 +22,7 @@ function Navbar() {
           className="logo"
           target="_blank"
           rel="noreferrer"
-          onClick={() => history.push("/game")}
+          href="https://www.youtube.com/watch?v=6n3pFFPSlW4"
         >
           <img src={logo} alt="dipam" />
         </a>
