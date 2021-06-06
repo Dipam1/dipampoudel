@@ -13,8 +13,8 @@ const Home = () => {
             <h3>I'm Deepum.</h3>
             <h4>And I'm a web developer.</h4>
             <div class="wrapper">
-              <a href="#">
-                <span>Clicky!</span>
+              <a href="https://resume.io/r/k2B5oxttW">
+                <span>View my Resume!</span>
               </a>
             </div>
           </div>
