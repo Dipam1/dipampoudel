@@ -4,10 +4,11 @@
 }
 
 .home .home-top {
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: nowrap;
   overflow: hidden;
   text-shadow: rgba(226, 219, 178, 0.612) 0px 0px 10px;

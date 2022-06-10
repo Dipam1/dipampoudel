@@ -22,10 +22,10 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="image-container">
+          {/* <div className="image-container">
             <div className="bg"></div>
-            {/* <img src={image} alt="" onMouseOver="http://picsum.photos/600" /> */}
-          </div>
+            <img src={image} alt="" onMouseOver="http://picsum.photos/600" />
+          </div> */}
         </div>
       </div>
     </>
