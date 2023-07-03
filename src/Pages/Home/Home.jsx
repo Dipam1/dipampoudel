@@ -3,6 +3,7 @@ import React from "react";
 import "./Home.css";
 
 const Home = () => {
+  //a
   return (
     <>
       <div className="home">
@@ -22,6 +23,7 @@ const Home = () => {
               </a>
             </div>
           </div>
+          
           {/* <div className="image-container">
             <div className="bg"></div>
             <img src={image} alt="" onMouseOver="http://picsum.photos/600" />
