@@ -14,7 +14,7 @@ const Home = () => {
             <h4>And I'm a web developer.</h4>
             <div class="wrapper">
               <a
-                href="https://resume.io/r/k2B5oxttW"
+                href="https://docs.google.com/document/d/1wNYQrI_AaXiDRZijVeE1HbSXg9dc_WTltmUCNo6LKPg/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
