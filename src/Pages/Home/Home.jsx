@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import image from "../../Images/RemoveBG.png";
+import React from "react";
+// import image from "../../Images/RemoveBG.png";
 import "./Home.css";
 
 const Home = () => {

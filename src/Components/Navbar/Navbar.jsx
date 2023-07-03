@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import "./Navbar.css";
-import { useHistory } from "react-router-dom";
 import logo from "../../Images/logo.png";
 
 function Navbar() {
-  const history = useHistory();
   const burgerRef = useRef();
   const bur1 = useRef();
   const bur2 = useRef();
