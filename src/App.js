@@ -1,21 +1,22 @@
 import Navbar from "./Components/Navbar/Navbar";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { GameMaybe, Home } from "./Pages";
+import { Home } from "./Pages";
+import Resume from "./Pages/Resume/Resume";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <div className="content">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/game" component={GameMaybe} />
-          </Switch>
-        </div>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <div className="content">
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+        <Switch>
+          <Route exact path="/resume" component={Resume} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

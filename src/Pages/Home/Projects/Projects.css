@@ -1,0 +1,33 @@
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: space-around;
+}
+
+.project-container .project-box {
+  width: 25%;
+  height: 250px;
+  background: linear-gradient(
+      90deg,
+      rgb(221, 226, 228) 0%,
+      rgb(235, 229, 236) 35%,
+      rgb(220, 226, 222) 64%,
+      rgb(228, 233, 239) 100%
+    )
+    no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-container .description {
+  font-size: 1rem;
+}

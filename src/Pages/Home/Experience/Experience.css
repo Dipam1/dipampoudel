@@ -1,0 +1,10 @@
+.experience-item ul {
+  padding: 0 40px 0 40px;
+  text-align: left;
+}
+
+.experience-item ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #666;
+}

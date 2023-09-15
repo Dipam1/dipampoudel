@@ -29,8 +29,11 @@ html {
 }
 
 .content {
-  width: 80%;
+  max-width: 1400px;
   margin: auto;
+  height: 85vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 :focus {
@@ -42,4 +45,25 @@ html {
   --color-two: #569f56;
   --color-three: #fad2e7;
   --color-four: #e6aacf;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbcbcb;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 0.1px solid #b7b7b7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
 }
