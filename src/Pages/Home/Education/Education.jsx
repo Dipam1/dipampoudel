@@ -1,9 +1,10 @@
 import React from "react";
 import "./Education.css";
+import Scroller from "../../../Components/Scroller/Scroller";
 
 function Education() {
   return (
-    <div className="section">
+    <div className="section education">
       <h2>Education</h2>
       <div className="education-container">
         <div className="branch">
@@ -21,6 +22,7 @@ function Education() {
           </div>
         </div>
       </div>
+      <Scroller scrollToClass="exp1" />
     </div>
   );
 }

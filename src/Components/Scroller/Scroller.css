@@ -1,0 +1,38 @@
+.scroller {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.scroller .Up {
+  background: url("../../Images/dannyUp.png") no-repeat center center;
+  cursor: pointer;
+  background-size: contain;
+  width: 240px;
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.scroller .Down {
+  background: url("../../Images/dannyDown.png") no-repeat center center;
+  cursor: pointer;
+  background-size: contain;
+  width: 240px;
+  height: 120px;
+  transition: transform 0.5s ease;
+}
+
+.scroller .button:hover {
+  opacity: 0.5;
+  animation: backAndForth 1s infinite alternate;
+}
+
+@keyframes backAndForth {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the value as needed */
+  }
+}

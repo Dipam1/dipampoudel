@@ -1,10 +1,11 @@
 import React from "react";
 import "./Projects.css";
+import Scroller from "../../../Components/Scroller/Scroller";
 
 function Projects() {
   return (
     <>
-      <div className="section">
+      <div className="section project1">
         <h2>Projects</h2>
 
         {/* Professional Projects */}
@@ -50,8 +51,9 @@ function Projects() {
             </p>
           </div>
         </div>
+        <Scroller scrollToClass="project2" />
       </div>
-      <div className="section">
+      <div className="section project2">
         <h2>Projects(contd...)</h2>
 
         <h3>Personal Projects</h3>
@@ -96,6 +98,7 @@ function Projects() {
             </p>
           </div>
         </div>
+        <Scroller scrollToClass="bye" />
       </div>
     </>
   );

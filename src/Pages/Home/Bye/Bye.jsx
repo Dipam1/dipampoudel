@@ -1,8 +1,10 @@
 import React from "react";
+import Scroller from "../../../Components/Scroller/Scroller";
+import "./Bye.css";
 
 function Bye() {
   return (
-    <div className="section">
+    <div className="section bye">
       <h2>Time to Bid Adieu!</h2>
       <p>
         Alright, you've had enough. Now, go do something fun. For my sake.
@@ -11,8 +13,9 @@ function Bye() {
         Love you.
         <br />
         <br />
-         Bye!
+        Bye!
       </p>
+      <Scroller scrollToClass="intro" direction="Up" />
     </div>
   );
 }

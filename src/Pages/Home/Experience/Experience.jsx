@@ -1,10 +1,11 @@
 import React from "react";
 import "./Experience.css";
+import Scroller from "../../../Components/Scroller/Scroller";
 
 function Experience() {
   return (
     <>
-      <div className="section">
+      <div className="section exp1">
         <h2>Work Experience</h2>
         <div className="experience-item">
           <h3>Front-End Developer, Nimble Clinical Research, New Jersey</h3>
@@ -31,8 +32,9 @@ function Experience() {
             </li>
           </ul>
         </div>
+        <Scroller scrollToClass="exp2" />
       </div>
-      <div className="section">
+      <div className="section exp2">
         <h2>Work Experience(contd..)</h2>
         <div className="experience-item">
           <h3>Web Developer, Pegotec Pte. Ltd, Singapore</h3>
@@ -55,8 +57,9 @@ function Experience() {
             </li>
           </ul>
         </div>
+        <Scroller scrollToClass="exp3" />
       </div>
-      <div className="section">
+      <div className="section exp3">
         <h2>Work Experience(contd..)</h2>
         <div className="experience-item">
           <h3>Web Developer, PrismaSofts, Kathmandu</h3>
@@ -79,6 +82,7 @@ function Experience() {
             </li>
           </ul>
         </div>
+        <Scroller scrollToClass="project1" />
       </div>
     </>
   );

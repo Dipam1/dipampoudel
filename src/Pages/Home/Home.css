@@ -3,6 +3,8 @@
 }
 
 .section {
+  overflow: hidden;
+  position: relative;
   height: 80vh;
   scroll-snap-align: start;
   padding: 2rem;
@@ -22,5 +24,22 @@
 .section p {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.4rem ;
+  font-size: 1.4rem;
+}
+
+/* For smaller screen size */
+@media (max-width: 950px) {
+  .section {
+    scroll-snap-align: none;
+    height: auto;
+  }
+  .scroller {
+    display: none;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+  }
+  .section p {
+    font-size: 1rem;
+  }
 }
