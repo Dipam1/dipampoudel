@@ -28,7 +28,7 @@
 }
 
 /* For smaller screen size */
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
   .section {
     scroll-snap-align: none;
     height: auto;
