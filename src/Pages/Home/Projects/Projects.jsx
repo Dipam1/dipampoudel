@@ -8,8 +8,6 @@ function Projects() {
       <div className="section project1">
         <h2>Projects</h2>
 
-        {/* Professional Projects */}
-        <h3>Professional Projects</h3>
         <div className="project-container">
           <div className="project-box">
             <a
@@ -26,7 +24,7 @@ function Projects() {
           </div>
           <div className="project-box">
             <a
-              href="https://www.example.com/project2"
+              href="https://nimble-cr.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -35,19 +33,6 @@ function Projects() {
             </a>
             <p className="description">
               Website and in house CRM for Nimble CR
-            </p>
-          </div>
-          <div className="project-box">
-            <a
-              href="https://www.example.com/project3"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://i.imgur.com/fsuFJ2Nm.png" alt="Project 3" />
-              <p>EcoSafe Driving</p>
-            </a>
-            <p className="description">
-              Dashboard and Analytics site for EcoSafe Driving Company{" "}
             </p>
           </div>
         </div>
@@ -56,37 +41,10 @@ function Projects() {
       <div className="section project2">
         <h2>Projects(contd...)</h2>
 
-        <h3>Personal Projects</h3>
         <div className="project-container">
           <div className="project-box">
             <a
-              href="https://sidhakarobar.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://i.imgur.com/LB69QW8m.png" alt="Project 1" />
-              <p>Sidha Karobar</p>
-            </a>
-            <p className="description">
-              Website for selling and buying properties
-            </p>
-          </div>
-          <div className="project-box">
-            <a
-              href="https://www.example.com/project2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://i.imgur.com/ql8hxJcm.png" alt="Project 2" />
-              <p>Nimble CR Website</p>
-            </a>
-            <p className="description">
-              Website and in house CRM for Nimble CR
-            </p>
-          </div>
-          <div className="project-box">
-            <a
-              href="https://www.example.com/project3"
+              href="https://pegotec.net/portfolio/asia-injury-protection-aip-eco-safe-driving/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,6 +53,19 @@ function Projects() {
             </a>
             <p className="description">
               Dashboard and Analytics site for EcoSafe Driving Company{" "}
+            </p>
+          </div>
+          <div className="project-box">
+            <a
+              href="https://deepum-components.netlify.app/wordle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://i.imgur.com/wniMNlDm.png" alt="Project 1" />
+              <p>Worlde</p>
+            </a>
+            <p className="description">
+              Created a wordle site in one day using React
             </p>
           </div>
         </div>

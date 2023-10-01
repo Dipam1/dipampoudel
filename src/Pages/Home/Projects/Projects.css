@@ -7,6 +7,11 @@
   justify-content: space-around;
 }
 
+.project-container img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .project-container .project-box {
   min-width: 200px;
   max-width: 250px;

@@ -1,4 +1,36 @@
-
 button {
   cursor: pointer;
+}
+
+.pointer_intro {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
+}
+.pointer_education {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
+}
+.pointer_exp1 {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
+}
+.pointer_exp2 {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
+}
+.pointer_exp3 {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
+}
+.pointer_project1 {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
+}
+.pointer_project2 {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
+}
+.pointer_bye {
+  cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Hello_Kitty_Pointer.png),
+    pointer !important;
 }
