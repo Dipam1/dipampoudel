@@ -33,7 +33,7 @@ function Navbar() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://docs.google.com/document/d/1wNYQrI_AaXiDRZijVeE1HbSXg9dc_WTltmUCNo6LKPg/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1OuZBl-6L4_DiWR3cFjqBhr9vPw2glXBB/edit?usp=sharing&ouid=113765240664512260792&rtpof=true&sd=true"
           >
             RESUME
           </a>
