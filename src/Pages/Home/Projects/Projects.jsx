@@ -9,7 +9,7 @@ function Projects() {
         <h2>Projects</h2>
 
         <div className="project-container">
-          <div className="project-box">
+          {/* <div className="project-box">
             <a
               href="https://sidhakarobar.com/"
               target="_blank"
@@ -21,7 +21,7 @@ function Projects() {
             <p className="description">
               Website for selling and buying properties
             </p>
-          </div>
+          </div> */}
           <div className="project-box">
             <a
               href="https://nimble-cr.com/"
@@ -33,6 +33,19 @@ function Projects() {
             </a>
             <p className="description">
               Website and in house CRM for Nimble CR
+            </p>
+          </div>
+          <div className="project-box">
+            <a
+              href="https://lodgenest.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="https://i.imgur.com/QaF1Qhfm.png" alt="Project 2" />
+              <p>LodgeNest: Apartment finder</p>
+            </a>
+            <p className="description">
+              Website created for a college project
             </p>
           </div>
         </div>
